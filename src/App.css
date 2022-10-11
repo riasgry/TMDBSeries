@@ -132,3 +132,34 @@ body{
   padding: 10px;
   background-color: rgba(21, 78, 126, 0.808);
 }
+
+@media only screen and (max-width: 660px) {
+  .normal-list .card-show img{
+    width: 150px;
+    height: auto;
+
+  }
+  
+}
+
+@media only screen and (max-width: 495px) {
+  .normal-list .card-show{
+    width: 40vw;
+
+  }
+  .normal-list .card-show img{
+    width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .normal-list .card-show{
+    width: 100vw;
+
+  }
+  .normal-list .card-show img{
+    width: 100%;
+
+  }
+}
