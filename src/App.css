@@ -1,0 +1,134 @@
+body{
+  margin: 4%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+@font-face {
+  font-family: customFont;
+  src: url(../public/SoothingPersonal-GOnjO.otf);
+}
+.bg{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../public/ash.gif);
+  background-repeat: repeat;
+  background-size: contain;
+  opacity: 0.3;
+}
+.App > h1,h4{
+  font-family: customFont,sans-serif;
+  color: white;
+  margin:0;
+}
+.App h1{
+  font-size: 3.5rem;
+}
+.App h4{
+  font-size: 1.5rem;
+  
+  margin-bottom: 20px;
+}
+.glass{
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.container > h2{
+  background-color: rgba(21, 78, 126, 0.808);
+  padding:20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.horizontal-list{
+  display: flex;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+}
+.horizontal-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.card-show{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.card-show{
+  position: relative;
+}
+
+.element{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+.card-show:hover > .element{
+  visibility: visible;
+  opacity: 1;
+}
+.horizontal-list .container-card .card-detail{
+  display: none;
+}
+.container-card{
+  display: flex;
+}
+.card-show p.name,p.vote,.genre{
+  position: absolute;
+  text-align: center;
+  background-color: rgba(41, 39, 39, 0.664);
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  
+}
+.card-show p.name{
+  top: -15px;
+}
+.card-show p.vote{
+  bottom: -15px;
+}
+.card-show .genre{
+  bottom: 30px;
+}
+
+.episodes{
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-list .card-show img{
+  width: 130px;
+}
+
+.normal-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.normal-list .card-show img{
+  height: 300px;
+  width: 200px;
+}
+
+.button-load{
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgba(21, 78, 126, 0.808);
+}
